@@ -1,0 +1,332 @@
+body {
+    background-color: #fcfcfc;
+    margin: 0px;
+}
+header {
+    background: #755A57;
+    text-align: center;
+    height: 582px;
+  }
+  header a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+  }
+  .logo {
+    color: #755A57;
+    font-size: 38px;
+    background-color: #EFDECD;
+    margin-top: -62px;
+    font-weight: bold;
+
+  }
+  .navbar-logo {
+    margin-top: -140px;
+    text-align: left;
+  }
+  .n {
+    margin-top: -90px;
+    text-align: right;
+  }
+  nav {
+    background-color: #DFCBBB;
+    display:block;
+    margin-top: -4px;
+    width: 1263px; 
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .topmenu > li {
+    width: 25%;
+    float: left;
+    position: relative;
+  }
+  .topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: #755A57;
+    padding: 10px 30px;
+  }
+  .topmenu li a:hover { color: #4E2D29; }
+  .submenu-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+  }
+  .submenu {
+    background: #EFDECD;
+    position: absolute;
+    left: 65px;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+  }
+  .submenu a {
+    color: #755A57;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 23px;
+    text-align: center;
+  }
+  .submenu li:last-child a { border-bottom: none; }
+  .topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  .block {
+    width: 250px;
+    height: 162px;
+    background-color: #EFDECD;
+    margin-top: -448px;
+    transform: translateX(0px);
+  }
+
+  .transparent {
+    position: relative;
+    transform: translateX(-517px);
+    max-width: 230px;
+    padding: 0.5px 20px;
+    margin: -20px auto 0;
+    margin-top: 0px;
+    background-color: #DFCBB8;
+    background-size: cover;
+  }
+  .transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .form-inner {
+    position: relative;
+  }
+  .form-inner h3 {
+    position: relative;
+    margin-top: 0;
+    color: #362722;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .form-inner h3:after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -6px;
+    height: 2px;
+    width: 200px;
+    background: #755A57;
+    text-transform: uppercase;
+  }
+  .form-inner label {
+    display: block;
+    padding-left: 16px;
+    color: #755A57;
+    transform: translateX(0px);
+    font-size: 20px;
+  }
+  .form-inner input {
+    display: block;
+    width: 100%;
+    padding: 0 -15px;
+    margin: 5px 0px 15px;
+    border-width: 0;
+    line-height: 28px;
+    border-radius: 20px;
+    transform: translateX(5px);
+    color: #362722;
+    background: #EFDECD;
+  }
+  .form-inner input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  #custom-checkbox+label {
+    position: relative;
+    margin: 20px 0;
+    text-transform: none;
+    cursor: pointer;
+  }
+  #custom-checkbox+label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: text-top;
+    background: white;
+  }
+  #custom-checkbox:checked+label:before {
+    background: #DFCBBB;
+  }
+  #custom-checkbox:checked+label:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 20px;
+    top: 9px;
+    background: white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+  .form-inner input[type="submit"] {
+    font-size: 20px;
+    background: #755A57;
+  }
+  .block > li > a {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: #755A57;
+    padding: 10px 30px;
+    list-style-type: none;
+
+  }
+  .block li a:hover { color: #4E2D29; }
+
+  .pp {
+    position: relative;
+    width: 210px;
+    margin: 0 auto;
+  }
+  input {
+    margin-top: 25px;
+    transform: translateX(-9px);
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #4E2D29;
+    border-radius: 10px;
+    outline: none;
+    background: #DFCBB8;
+    color: #4E2D29;
+  }
+  button {
+    position: absolute; 
+    top: 33px;
+    right: 0px;
+    width: 42px;
+    height: 30px;
+    border: none;
+    background: #DFCBB8;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #755A57;
+  }
+
+  .category-wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  .category-wrap li {margin: 12px 0 0 0px;}
+  .category-wrap a {
+    text-decoration: none;
+    display: block;  
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: #755A57;
+    padding: 20px;
+    position: relative;
+    transition: .3s linear;
+  }
+  .block1{
+    width: 250px;
+    height: 447px;
+    background-color: #EFDECD;
+    margin-top: -460px;
+    transform: translateX(1013.5px);
+  }
+  .category-wrap1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  .category-wrap1 li {margin: 12px 0 0 0px;}
+  .category-wrap1 a {
+    text-align: center;
+    text-decoration: none;
+    display: block;  
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: #755A57;
+    padding: 20px;
+    position: relative;
+    transition: .3s linear;
+  }
+  .sa {
+    border: 5px solid #D3B7A1;
+    width: 95%;
+    height: 65%;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px 0 0px;
+  }
+  .image-box {
+    position: relative;
+    width: 800px; 
+    margin: 50px auto 0;
+    margin-top: -500px;
+  }
+  .image-box .border {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+  .image-box img {
+    display: block;
+    position: relative;
+    width: 600px;
+    height: 442px;
+  }
+  .image-box .image-content {
+    position: absolute;
+    bottom: 0;
+    top: 0px;
+    right: 0;
+    left: 25px;
+    padding: 15px;
+    z-index: 2;
+  }
+  .image-box .image-header {
+    font-size: 50px;
+    padding-bottom: -35px;
+    color: #EFDECD;
+    text-align: center;
+    font-weight: normal;
+  }
+  .image-box p {
+    color: #DFCBB8;
+    font-size: 33px;
+    margin-top: -30px;
+    line-height: 51px;
+    text-align: center;
+  }
